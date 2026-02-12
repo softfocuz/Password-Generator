@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    height: 400px;
+    min-width: 300px;
+    max-width: auto;
+    border: 2px solid #000000;
+    padding: 20px;
+    margin: 30px 20px;
+}
+
+.border {
+    height: 380px;
+    min-width: 280px;
+    max-width: auto;
+    border: 2px solid #000000;
+    padding: 20px;
+    margin: 30px 20px;
+}
+
