@@ -14,7 +14,7 @@ def password_generator(length=14):
         random.choice(symbols)
     ]
 
-    password += [random.choice(combinedChars) for _ in range(length - 3)]
+    password += [random.choice(combinedChars) for i in range(length - 3)]
     random.shuffle(password)
 
     return ''.join(password)

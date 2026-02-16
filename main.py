@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
-from routers import root
+from routers import password
 
 app = FastAPI()
 
@@ -16,7 +16,7 @@ app.add_middleware(
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
 @app.get("/")
-async def home():
+async def index():
     return FileResponse("index.html")
 
-app.include_router(root.router)
+app.include_router(password.router)
